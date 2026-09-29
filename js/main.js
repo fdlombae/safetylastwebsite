@@ -45,23 +45,24 @@
 })();
 
 // ---------- YouTube embeds ----------
-// Shows a thumbnail first and only loads the YouTube player when clicked,
-// which keeps the page fast and avoids YouTube cookies until then.
+// Each video is a plain link to YouTube (so it works without JavaScript and
+// search engines can follow it). Here it gets a thumbnail, and the player is
+// only loaded when clicked, which keeps the page fast and avoids YouTube
+// cookies until then.
 (function () {
-  function videoId(value) {
-    const match = value.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
-    return match ? match[1] : value.trim();
+  const playLabel = document.documentElement.lang === 'nl' ? 'Video afspelen: ' : 'Play video: ';
+
+  function videoId(url) {
+    const match = url.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
+    return match ? match[1] : null;
   }
 
-  document.querySelectorAll('.yt[data-youtube]').forEach((el) => {
-    const id = videoId(el.dataset.youtube);
-    const caption = el.closest('figure')?.querySelector('figcaption');
-    const title = caption ? caption.textContent.trim() : 'YouTube-video';
-
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'yt__play';
-    button.setAttribute('aria-label', 'Video afspelen: ' + title);
+  document.querySelectorAll('a.yt').forEach((link) => {
+    const id = videoId(link.href);
+    if (!id) return;
+    const caption = link.closest('figure')?.querySelector('figcaption');
+    const title = caption ? caption.textContent.trim() : 'YouTube';
+    link.setAttribute('aria-label', playLabel + title);
 
     const thumb = document.createElement('img');
     thumb.alt = '';
@@ -71,17 +72,19 @@
     thumb.addEventListener('load', () => {
       if (thumb.naturalWidth <= 120) thumb.src = 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg';
     });
-    button.appendChild(thumb);
+    link.appendChild(thumb);
 
-    button.addEventListener('click', () => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const player = document.createElement('div');
+      player.className = 'yt';
       const iframe = document.createElement('iframe');
       iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
       iframe.title = title;
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
       iframe.allowFullscreen = true;
-      el.replaceChildren(iframe);
+      player.appendChild(iframe);
+      link.replaceWith(player);
     });
-
-    el.appendChild(button);
   });
 })();
