@@ -8,6 +8,9 @@
   <link rel="canonical" href="https://safetylast.be/">
   <link rel="alternate" hreflang="nl" href="https://safetylast.be/">
   <link rel="alternate" hreflang="en" href="https://safetylast.be/en/">
+  <link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/">
+  <link rel="alternate" hreflang="de" href="https://safetylast.be/de/">
+  <link rel="alternate" hreflang="es" href="https://safetylast.be/es/">
   <link rel="alternate" hreflang="x-default" href="https://safetylast.be/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#f3f2ee">
@@ -19,6 +22,9 @@
   <meta property="og:url" content="https://safetylast.be/">
   <meta property="og:locale" content="nl_BE">
   <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:image" content="https://safetylast.be/assets/images/web/outcrop-group-1200.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="900">
@@ -52,18 +58,18 @@
           "https://johansabbe.com/safety-last-soundpainting-ensemble"
         ],
         "member": [
-          { "@type": "OrganizationRole", "roleName": "Soundpainter", "member": { "@type": "Person", "name": "Johan Sabbe" } },
-          { "@type": "OrganizationRole", "roleName": "Zang & spoken word", "member": { "@type": "Person", "name": "Loeke Van Houtteghem" } },
+          { "@type": "OrganizationRole", "roleName": "Soundpainter", "member": { "@type": "Person", "name": "Johan Sabbe", "url": "https://johansabbe.com" } },
+          { "@type": "OrganizationRole", "roleName": "Zang & spoken word", "member": { "@type": "Person", "name": "Loeke Vanhoutteghem", "url": "https://www.loekevanhoutteghem.com" } },
           { "@type": "OrganizationRole", "roleName": "Viool", "member": { "@type": "Person", "name": "Ruth Mareen" } },
           { "@type": "OrganizationRole", "roleName": "Synthesizer & zang", "member": { "@type": "Person", "name": "Anthe Huybrechts" } },
           { "@type": "OrganizationRole", "roleName": "Altviool", "member": { "@type": "Person", "name": "Kris Matthynssens" } },
           { "@type": "OrganizationRole", "roleName": "Viola da gamba", "member": { "@type": "Person", "name": "Dirk Moelants" } },
-          { "@type": "OrganizationRole", "roleName": "Basfluit", "member": { "@type": "Person", "name": "Nathalie Van Meirvenne" } },
+          { "@type": "OrganizationRole", "roleName": "Basfluit", "member": { "@type": "Person", "name": "Nathalie Van Meirvenne", "url": "https://nathalievanmeirvenne.com/" } },
           { "@type": "OrganizationRole", "roleName": "Accordeon", "member": { "@type": "Person", "name": "Ward Ginneberge" } },
           { "@type": "OrganizationRole", "roleName": "Percussie", "member": { "@type": "Person", "name": "Laurens Van Bouwelen" } },
           { "@type": "OrganizationRole", "roleName": "Contrabas", "member": { "@type": "Person", "name": "Flor Delombaerde" } },
           { "@type": "OrganizationRole", "roleName": "Piano", "member": { "@type": "Person", "name": "Ward De Vleeschhouwer" } },
-          { "@type": "OrganizationRole", "roleName": "Bruitage & video", "member": { "@type": "Person", "name": "Kobe Wens" } }
+          { "@type": "OrganizationRole", "roleName": "Bruitage & video", "member": { "@type": "Person", "name": "Kobe Wens", "url": "https://www.kobewens.be" } }
         ]
       },
       {
@@ -100,6 +106,9 @@
     <nav class="lang" aria-label="Taal">
       <a href="./" hreflang="nl" lang="nl" aria-current="page">NL</a>
       <a href="en/" hreflang="en" lang="en">EN</a>
+      <a href="fr/" hreflang="fr" lang="fr">FR</a>
+      <a href="de/" hreflang="de" lang="de">DE</a>
+      <a href="es/" hreflang="es" lang="es">ES</a>
     </nav>
   </header>
 
@@ -117,7 +126,8 @@
     </section>
 
     <!-- ============ ENSEMBLE CAROUSEL ============
-         To add a member: copy one <li class="member"> block, change the photo, name, role and bio. -->
+         To add a member: copy one <li class="member"> block, change the photo, name, role and bio.
+         Without a bio, leave out the <p class="member__bio"> and the tabindex. -->
     <section class="section ensemble" aria-labelledby="ensemble-title">
       <div class="container section__head">
         <h2 id="ensemble-title" class="label">Het ensemble</h2>
@@ -136,71 +146,64 @@
           <li class="member" tabindex="0">
             <div class="member__photo">
               <img src="assets/images/web/johan.jpg" alt="Johan Sabbe" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+              <p class="member__bio">Studeerde jazzpiano en -compositie. Muzikant en avontuurlijke pedagoog. Gepassioneerd door de mogelijkheden van live-compositie, van multidisciplinair creëren en het samenbrengen van artiesten van alle leeftijden, niveau’s en vanuit alle achtergronden. Al meer dan vijftien jaar internationaal actief in het verspreiden en mee ontwikkelen van Soundpainting als artistieke en pedagogische tool.</p>
             </div>
-            <h3 class="member__name">Johan Sabbe</h3>
+            <h3 class="member__name">Johan Sabbe <a class="member__link" href="https://johansabbe.com" target="_blank" rel="noopener" aria-label="Website van Johan Sabbe"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a></h3>
             <p class="member__role">Soundpainter</p>
           </li>
           <li class="member" tabindex="0">
             <div class="member__photo">
-              <img src="assets/images/web/loeke.jpg" alt="Loeke Van Houtteghem" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+              <img src="assets/images/web/loeke.jpg" alt="Loeke Vanhoutteghem" loading="lazy" width="800" height="1067">
+              <p class="member__bio">Loeke Vanhoutteghem is een woordkunstenaar, schrijver, dichter en muzikante met een liefde voor het experiment en het podium. Doorheen de jaren specialiseerde ze zich in spoken word en improvisatie met taal. Je kan haar verder ook kennen als gitariste van de punk band Maria Iskariot.</p>
             </div>
-            <h3 class="member__name">Loeke Van Houtteghem</h3>
+            <h3 class="member__name">Loeke Vanhoutteghem <a class="member__link" href="https://www.loekevanhoutteghem.com" target="_blank" rel="noopener" aria-label="Website van Loeke Vanhoutteghem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a></h3>
             <p class="member__role">Zang &amp; spoken word</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/ruth.jpg" alt="Ruth Mareen" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Ruth Mareen</h3>
             <p class="member__role">Viool</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/anthe.jpg" alt="Anthe Huybrechts" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Anthe Huybrechts</h3>
             <p class="member__role">Synthesizer &amp; zang</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/kris.jpg" alt="Kris Matthynssens" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Kris Matthynssens</h3>
             <p class="member__role">Altviool</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/dirk.jpg" alt="Dirk Moelants" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Dirk Moelants</h3>
             <p class="member__role">Viola da gamba</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/nathalie.jpg" alt="Nathalie Van Meirvenne" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-            <h3 class="member__name">Nathalie Van Meirvenne</h3>
+            <h3 class="member__name">Nathalie Van Meirvenne <a class="member__link" href="https://nathalievanmeirvenne.com/" target="_blank" rel="noopener" aria-label="Website van Nathalie Van Meirvenne"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a></h3>
             <p class="member__role">Basfluit</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/wardg.jpg" alt="Ward Ginneberge" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Ward Ginneberge</h3>
             <p class="member__role">Accordeon</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/laurens.jpg" alt="Laurens Van Bouwelen" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Laurens Van Bouwelen</h3>
             <p class="member__role">Percussie</p>
@@ -208,25 +211,23 @@
           <li class="member" tabindex="0">
             <div class="member__photo">
               <img src="assets/images/web/flor.jpg" alt="Flor Delombaerde" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+              <p class="member__bio">Al van kinds af jazz piano en bas studerende. Actief bij folkgroep Cardboard Cabin en verscheidene gelegenheidsbands.</p>
             </div>
             <h3 class="member__name">Flor Delombaerde</h3>
             <p class="member__role">Contrabas</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/wardv.jpg" alt="Ward De Vleeschhouwer" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
             <h3 class="member__name">Ward De Vleeschhouwer</h3>
             <p class="member__role">Piano</p>
           </li>
-          <li class="member" tabindex="0">
+          <li class="member">
             <div class="member__photo">
               <img src="assets/images/web/kobe.jpg" alt="Kobe Wens" loading="lazy" width="800" height="1067">
-              <p class="member__bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
             </div>
-            <h3 class="member__name">Kobe Wens</h3>
+            <h3 class="member__name">Kobe Wens <a class="member__link" href="https://www.kobewens.be" target="_blank" rel="noopener" aria-label="Website van Kobe Wens"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></a></h3>
             <p class="member__role">Bruitage &amp; video</p>
           </li>
         </ul>

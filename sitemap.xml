@@ -5,12 +5,45 @@
     <loc>https://safetylast.be/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://safetylast.be/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://safetylast.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://safetylast.be/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://safetylast.be/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://safetylast.be/"/>
   </url>
   <url>
     <loc>https://safetylast.be/en/</loc>
     <xhtml:link rel="alternate" hreflang="nl" href="https://safetylast.be/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://safetylast.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://safetylast.be/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://safetylast.be/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://safetylast.be/"/>
+  </url>
+  <url>
+    <loc>https://safetylast.be/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://safetylast.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://safetylast.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://safetylast.be/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://safetylast.be/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://safetylast.be/"/>
+  </url>
+  <url>
+    <loc>https://safetylast.be/de/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://safetylast.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://safetylast.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://safetylast.be/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://safetylast.be/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://safetylast.be/"/>
+  </url>
+  <url>
+    <loc>https://safetylast.be/es/</loc>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://safetylast.be/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://safetylast.be/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://safetylast.be/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://safetylast.be/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://safetylast.be/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://safetylast.be/"/>
   </url>
 </urlset>

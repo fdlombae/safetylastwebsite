@@ -50,7 +50,14 @@
 // only loaded when clicked, which keeps the page fast and avoids YouTube
 // cookies until then.
 (function () {
-  const playLabel = document.documentElement.lang === 'nl' ? 'Video afspelen: ' : 'Play video: ';
+  const playLabels = {
+    nl: 'Video afspelen: ',
+    en: 'Play video: ',
+    fr: 'Lire la vidéo : ',
+    de: 'Video abspielen: ',
+    es: 'Reproducir vídeo: ',
+  };
+  const playLabel = playLabels[document.documentElement.lang] || playLabels.en;
 
   function videoId(url) {
     const match = url.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([\w-]{11})/);
